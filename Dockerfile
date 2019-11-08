@@ -24,5 +24,5 @@ RUN gpasswd -a ${USER} sudo
 USER ${USER}
 WORKDIR ${HOME}
 
-COPY ocr_test.py .
+COPY pyocr.py .
 COPY B.png .
