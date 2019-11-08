@@ -24,5 +24,5 @@ RUN gpasswd -a ${USER} sudo
 USER ${USER}
 WORKDIR ${HOME}
 
-COPY pyocr.py .
+COPY pyocr_test.py .
 COPY B.png .
