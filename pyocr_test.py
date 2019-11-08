@@ -26,5 +26,5 @@ def ocr_reader(arg: str):
 if __name__ == "__main__":
     args = sys.argv
     if len(args) <= 1:
-        raise ValueError("not specified directory.")
+        raise ValueError("Image file is not specified.")
     ocr_reader(args[1])
