@@ -3,14 +3,14 @@ FROM nvidia/cuda:10.1-devel-ubuntu18.04
 MAINTAINER Toshihiro KONDA
 
 RUN apt-get update && \
-    apt install --yes vim \
-		      python3 \
-		      python3-pip \
-		      build-essential \
-		      tesseract-ocr-all
+    apt-get install --yes vim \
+	    	          python3 \
+		          python3-pip \
+		          build-essential \
+		          tesseract-ocr-all
 
-RUN pip3 install pyocr \
-    	 	 pillow
+RUN python3 -m pip install pyocr \
+    	 	           pillow
 
 ENV LANG C.UTF-8
 
